@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>horas</div>
+    <div>minutos</div>
+    <div>segundos</div>
+
+    <script>
+        const divs = document.querySelectorAll("div.divs")
+
+        const hdiv = document.getElementsByTagName("div")[0]
+        const mdiv = document.getElementsByTagName("div")[1]
+        const sdiv = document.getElementsByTagName("div")[2]
+
+
+        
+
+        setInterval(() => {
+            const data = new Date()
+            const h = data.getHours()
+            const m = data.getMinutes()
+            const s = data.getSeconds()
+            hdiv.textContent = h
+            mdiv.textContent = m
+            sdiv.textContent = s
+        }, 1)
+        
+        
+    </script>
+</body>
+</html>

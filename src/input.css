@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.cx {
+    @apply rounded-[5px] shadow-[1px_3px_10px_#000000a6]
+}
+
+.ppp {
+    @apply text-[70px] font-semibold
+}
